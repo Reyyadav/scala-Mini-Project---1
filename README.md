@@ -99,3 +99,41 @@ When X Actual Number is Generated Randomly
                               
                               }
                               
+
+
+## Code Explaination:-
+Here's an explanation of the code:
+
+### -import scala.io.StdIn.readLine: This imports the readLine method from the scala.io.StdIn package, which allows us to read input from the console.
+
+### -import scala.util.control.Breaks._: This imports utilities for implementing breaks and continues in loops.
+
+### -import scala.util.Random: This imports the Random utility from the scala.util package, which we use to generate random numbers.
+
+### -object Main { ... }: This defines the main object of the program.
+
+### -def main(args: Array[String]): Unit = { ... }: This is the entry point of the program. It defines the main method, which takes an array of strings as input arguments and returns nothing (Unit).
+
+### -var X = Random.nextInt(101): This line generates a random number between 0 and 100 (inclusive) and assigns it to the variable X. This is the number the player needs to guess.
+
+### -var gamestatus = "Lost": This variable keeps track of the game status. It is initialized to "Lost" and will be updated to "Won" if the player guesses the correct number.
+
+### -breakable() { ... }: This function allows us to break out of a loop early if needed. It defines a scope within which we can use the break() method to exit the loop prematurely.
+
+### -for (w <- 1 to 5) { ... }: This loop iterates 5 times, representing the player's 5 attempts to guess the number.
+
+### -var x = readLine("Enter Your Number"): This line prompts the player to enter their guess and reads their input from the console. The input is stored as a string in the variable x.
+
+### -var guess = x.toInt: This line converts the string input x into an integer and stores it in the variable guess.
+
+### -if (guess < X) { ... } else if (guess > X) { ... } else { ... }: This conditional block checks if the player's guess is less than, greater than, or equal to the random number X.
+
+### -println("Your guess is less than X") and println("Your guess is Greater than X"): These lines inform the player whether their guess is too low or too high.
+
+### -println("You guessed it Correctly!!"), println(w), println(X): If the player's guess is correct, these lines inform the player that they guessed correctly, display the number of attempts taken, and reveal the correct number X.
+
+### -gamestatus="Won": This line updates the gamestatus variable to "Won" if the player guesses the correct number, indicating that the player won the game.
+
+### -break(): This line breaks out of the loop early if the player guesses the correct number, preventing the loop from continuing unnecessarily.
+
+### -if(gamestatus == "Lost") println(X) println("you lost the Game "): This conditional block checks if the game status is still "Lost" after the loop ends. If so, it prints the correct number X (revealed to the player since they lost) and informs the player that they lost the game.
