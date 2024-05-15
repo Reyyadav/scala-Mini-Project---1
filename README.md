@@ -98,6 +98,12 @@ When X Actual Number is Generated Randomly
                                 }
                               
                               }
+
+
+### Code
+
+- ![Code](https://github.com/Reyyadav/scala-Mini-Project/assets/153619494/b173b7e1-6a56-42e5-a413-08229df4ac5c)
+
                               
 
 
