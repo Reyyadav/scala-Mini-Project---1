@@ -1,6 +1,6 @@
 # SCALA Mini Project 
 
-# Furtune Game 
+# 1. Furtune Game 
 
 ### -The Player will be given 5 Turns to guess a number lets say "X"
 ### -After Each Attempt Your Program will do:-
